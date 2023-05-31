@@ -1,6 +1,5 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import "./App.css";
 import Leftside from "./components/LeftSide/Leftside";
 import Rightside from "./components/RightSide/Rightside";
 

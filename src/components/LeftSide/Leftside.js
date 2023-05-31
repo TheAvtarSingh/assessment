@@ -21,7 +21,7 @@ function Leftside() {
           // style={{ width: "54%" }}
           className="row d-flex flex-row justify-content-start align-items-start"
         >
-          <h1 className="text-style fw-bolder">100% Uptime &#128526;</h1>
+          <h1 className="text-style-left fw-bolder">100% Uptime &#128526;</h1>
           <br />
 
           <h2 className="mt-2 text-secondary">
@@ -42,9 +42,9 @@ function Leftside() {
               <p className="text-secondary ms-1">aesthisia.com</p>
             </div>
             <div className="mt-4 d-flex flex-row pe-4">
-              <Linkedin className="text-secondary mt-1 " />
-              <Facebook className="text-secondary ms-1 mt-1" />
-              <Instagram className="text-secondary ms-1 mt-1" />
+              <Linkedin className="text-light mt-1 " />
+              <Facebook className="text-light ms-1 mt-1" />
+              <Instagram className="text-light ms-1 mt-1" />
             </div>
           </div>
         </div>

@@ -2,7 +2,7 @@
   font-family: "SF-Pro";
 }
 
-.text-style {
+.text-style-left {
   color: white;
   padding-top: 35vh;
   font-weight: 700;
@@ -13,7 +13,4 @@
   height: 90vh;
   width: auto;
   background-repeat: no-repeat;
-}
-.leaf {
-  width: 20px;
 }

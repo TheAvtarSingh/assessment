@@ -3,17 +3,13 @@
 }
 
 .text-style {
-  color: white;
-  padding-top: 35vh;
+  color: black;
   font-weight: 700;
 }
-
-#backimage {
-  background-image: url(./../../assets/background.png);
-  height: 90vh;
-  width: auto;
-  background-repeat: no-repeat;
+.text-style-light {
+  font-weight: 100;
 }
+
 .leaf {
-  width: 20px;
+  width: 70px;
 }
