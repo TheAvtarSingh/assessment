@@ -9,7 +9,7 @@
 }
 
 #backimage {
-  background-image: url(./assets/background.png);
+  background-image: url(./../../assets/background.png);
   height: 90vh;
   width: auto;
   background-repeat: no-repeat;
