@@ -1,5 +1,5 @@
 import React from "react";
-import "./Leftside.css";
+import "./Rightside.css";
 import {
   GlobeAmericas,
   Linkedin,
@@ -7,15 +7,17 @@ import {
   Instagram,
 } from "react-bootstrap-icons";
 
-function Leftside() {
+function Rightside() {
   return (
-    <div className="m-3 g-col-6 " style={{ width: "46%" }} id="backimage">
+    <div
+      className="ms-5 m-3 g-col-6 d-flex flex-column "
+      style={{ width: "46%" }}
+    >
       <img
-        className="d-inline m-3 pt-1"
-        src={require("./../../assets/exo.png")}
-        alt="exo"
+        className="d-inline m-3 pt-1 leaf"
+        src={require("./../../assets/leaf.png")}
+        alt="leaf"
       />
-
       <div className="container" style={{ marginLeft: "10px" }}>
         <div
           // style={{ width: "54%" }}
@@ -53,4 +55,4 @@ function Leftside() {
   );
 }
 
-export default Leftside;
+export default Rightside;
