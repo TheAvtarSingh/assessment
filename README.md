@@ -12,3 +12,7 @@
 ![image](https://github.com/TheAvtarSingh/assessment/assets/88712571/740e8cff-e8e0-4c6c-9510-3c55bf53bec0)
 
 #### Only Validations Left
+
+# Final Commit - Validations and Animation Done
+
+![image](https://github.com/TheAvtarSingh/assessment/assets/88712571/adbb5b44-8af4-4974-9fae-fbeab126c30e)
