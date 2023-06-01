@@ -15,7 +15,7 @@
   background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   .hide-on-short {
     display: none;
   }
