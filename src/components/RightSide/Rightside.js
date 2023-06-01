@@ -1,11 +1,5 @@
 import React from "react";
 import "./Rightside.css";
-import {
-  GlobeAmericas,
-  Linkedin,
-  Facebook,
-  Instagram,
-} from "react-bootstrap-icons";
 
 function Rightside() {
   return (
@@ -37,19 +31,29 @@ function Rightside() {
             className="d-flex flex-column justify-content-center align-items-center"
           >
             <div className="form-group mb-3">
+              <label htmlFor="email">
+                Email Address <span className="text-danger">(*)</span>
+              </label>
               <input
                 type="email"
                 name="email"
                 id="email"
-                className="form-control mt-3"
+                required
+                className="form-control mt-2"
                 placeholder="Enter Your Email"
               />{" "}
             </div>
             <div className="form-group mb-1">
+              <label htmlFor="password" className="mb-1">
+                Password <span className="text-danger mb-1">(*)</span>
+              </label>
               <input
                 type="password"
                 name="password"
                 id="password"
+                pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"
+                required
+                title="Minimum eight characters, at least one letter, one number and one special character"
                 className="form-control"
                 placeholder="Enter Your Password"
               />
@@ -77,7 +81,17 @@ function Rightside() {
             <p className="text-style-light text-secondary">
               Don't have an account yet?
             </p>
-            <p className="text-style-light ps-1 text-success">Sign up</p>
+            <p>
+              <a
+                href="#"
+                className="text-style-light ps-1 text-success text-decoration-none"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                Sign up
+              </a>
+            </p>
           </div>
         </div>
       </div>

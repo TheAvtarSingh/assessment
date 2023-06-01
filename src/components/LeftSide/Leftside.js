@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Leftside.css";
 import {
   GlobeAmericas,
@@ -8,6 +8,35 @@ import {
 } from "react-bootstrap-icons";
 
 function Leftside() {
+  const headingText = ["100% Uptime", "0% Downtime", "100% Available"];
+  const descriptionText = ["Zero Infrastructure", "Instance", "Reliablity"];
+
+  const [index, setIndex] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const timer = () => {
+      setVisible(false);
+    };
+    setInterval(timer, 2000);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+
+  const fadeOut = () => {
+    if (!visible) {
+      setIndex((prevIndex) => {
+        if (prevIndex === headingText.length - 1) {
+          return 0;
+        }
+        return prevIndex + 1;
+      });
+      setVisible(true);
+    }
+  };
+
   return (
     <div className="m-3 g-col-6 " style={{ width: "46%" }} id="backimage">
       <img
@@ -21,12 +50,22 @@ function Leftside() {
           // style={{ width: "54%" }}
           className="row d-flex flex-row justify-content-start align-items-start"
         >
-          <h1 className="text-style-left fw-bolder">100% Uptime &#128526;</h1>
+          <h1
+            className="text-style-left fw-bolder"
+            style={{ opacity: visible ? 1 : 0, transition: "opacity 0.5s" }}
+            onTransitionEnd={fadeOut}
+          >
+            {headingText[index]} &#128526;
+          </h1>
           <br />
-
-          <h2 className="mt-2 text-secondary">
-            Zero Infrastructure <br /> Management
-          </h2>
+          <h2
+            className="text-secondary"
+            style={{ opacity: visible ? 1 : 0, transition: "opacity 0.5s" }}
+            onTransitionEnd={fadeOut}
+          >
+            {descriptionText[index]}{" "}
+          </h2>{" "}
+          <br /> <h2 className="text-secondary">Management</h2>
           <img
             style={{ width: "54px" }}
             className="rounded float-start original"
