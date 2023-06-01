@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <div className="mainPage">
-        <div className="row mt-5">
+        <div className="row mt-3" style={{ width: "100vw" }}>
           <Leftside />
           <Rightside />
         </div>
