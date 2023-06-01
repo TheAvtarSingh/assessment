@@ -38,7 +38,11 @@ function Leftside() {
   };
 
   return (
-    <div className="m-3 g-col-6 " style={{ width: "46%" }} id="backimage">
+    <div
+      className="m-3 g-col-6 hide-on-short"
+      style={{ width: "46%" }}
+      id="backimage"
+    >
       <img
         className="d-inline m-3 pt-1"
         src={require("./../../assets/exo.png")}

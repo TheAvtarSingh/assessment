@@ -4,7 +4,7 @@ import "./Rightside.css";
 function Rightside() {
   return (
     <div
-      className="ms-5 m-3 g-col-6 d-flex flex-column justify-content-center align-items-center"
+      className="ms-5 m-3 g-col-6 d-flex flex-column justify-content-center align-items-center align-on-short"
       style={{ width: "46%" }}
     >
       <img
@@ -69,7 +69,7 @@ function Rightside() {
             <button
               style={{
                 width: "100%",
-                boxShadow: "0px 15px 20px rgb(0, 0, 0);",
+                boxShadow: "0px 15px 20px rgb(0, 0, 0)",
               }}
               className="shadow-lg btn btn-dark btn-block ps-5 pe-5 mt-3 "
               type="submit"
