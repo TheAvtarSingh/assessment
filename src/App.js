@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <div className="mainPage">
-        <div className="row m-0">
+        <div className="row mt-5">
           <Leftside />
           <Rightside />
         </div>

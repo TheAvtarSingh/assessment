@@ -73,7 +73,7 @@ function Leftside() {
             alt="Text"
           />
           <div
-            className="d-inline-block text-light align-self-start d-flex flex-row mt-5 justify-content-between"
+            className="d-inline-block text-light align-self-start d-flex flex-row mt-4 justify-content-between"
             style={{ marginTop: "20px" }}
           >
             <div className="mt-4 d-flex flex-row ">

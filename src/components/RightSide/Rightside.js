@@ -60,7 +60,7 @@ function Rightside() {
             </div>
 
             <a
-              href="#"
+              href="/"
               className="text-secondary text-decoration-none align-self-end"
             >
               Forgot Password?
@@ -83,7 +83,7 @@ function Rightside() {
             </p>
             <p>
               <a
-                href="#"
+                href="/"
                 className="text-style-light ps-1 text-success text-decoration-none"
                 target="_blank"
                 rel="noopener noreferrer"
